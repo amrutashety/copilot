@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const deleteBtn = document.createElement("button");
             deleteBtn.className = "delete-participant-btn";
             deleteBtn.title = "Unregister participant";
+            deleteBtn.setAttribute("aria-label", "Unregister participant");
             deleteBtn.innerHTML = "<span aria-hidden='true'>&#128465;</span>"; // Trash can icon
             deleteBtn.addEventListener("click", async (e) => {
               e.stopPropagation();
